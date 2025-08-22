@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadhif Aydin Adinandra - Portfolio</title>
+    <meta name="description" content="Computer Science student specializing in game development and content creation. Discover my projects, skills, and professional journey.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Nadhif Aydin Adinandra - Portfolio">
+    <meta property="og:description" content="Computer Science student specializing in game development and content creation.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="brand">
+                    <span class="brand-logo" data-testid="brand-logo">Nadhif Aydin Adinandra</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <div class="nav-links">
+                        <button onclick="scrollToSection('home')" class="nav-link" data-testid="nav-home">Home</button>
+                        <button onclick="scrollToSection('about')" class="nav-link" data-testid="nav-about">About</button>
+                        <button onclick="scrollToSection('projects')" class="nav-link" data-testid="nav-projects">Projects</button>
+                        <button onclick="scrollToSection('skills')" class="nav-link" data-testid="nav-skills">Skills</button>
+                        <button onclick="scrollToSection('contact')" class="nav-cta-button" data-testid="nav-contact">Contact</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-button">
+                    <button onclick="toggleMobileMenu()" class="hamburger" data-testid="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="mobile-menu">
+                <div class="mobile-nav-links">
+                    <button onclick="scrollToSection('home')" class="mobile-nav-link" data-testid="mobile-nav-home">Home</button>
+                    <button onclick="scrollToSection('about')" class="mobile-nav-link" data-testid="mobile-nav-about">About</button>
+                    <button onclick="scrollToSection('projects')" class="mobile-nav-link" data-testid="mobile-nav-projects">Projects</button>
+                    <button onclick="scrollToSection('skills')" class="mobile-nav-link" data-testid="mobile-nav-skills">Skills</button>
+                    <button onclick="scrollToSection('contact')" class="mobile-nav-link" data-testid="mobile-nav-contact">Contact</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <div class="hero-content animate-slide-up">
+                    <div class="hero-badge">
+                        <i class="fas fa-gamepad"></i>
+                        Computer Science Student
+                    </div>
+                    
+                    <h1 class="hero-title" data-testid="hero-title">
+                        Hi, I'm <span class="gradient-text">Nadhif</span>
+                    </h1>
+                    
+                    <p class="hero-description" data-testid="hero-description">
+                        A passionate Computer Science college student specializing in <strong>game development</strong> and <strong>content creation</strong>. I bring creativity and technical expertise to every project.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button onclick="scrollToSection('projects')" class="btn btn-primary" data-testid="button-view-work">
+                            <i class="fas fa-eye"></i>
+                            View My Work
+                        </button>
+                        <button onclick="scrollToSection('contact')" class="btn btn-secondary" data-testid="button-get-in-touch">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="attached_assets/jaket kuning lagi_1755824670406.jpg" alt="Nadhif Aydin Adinandra - Profile Photo" class="profile-image" data-testid="hero-profile-image">
+                        <div class="floating-icons">
+                            <div class="floating-icon" style="top: 10%; left: 15%; animation-delay: 0s;">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="floating-icon" style="top: 20%; right: 20%; animation-delay: 0.5s;">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="floating-icon" style="bottom: 30%; left: 10%; animation-delay: 1s;">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="about-title">About Me</h2>
+                <p class="section-subtitle" data-testid="about-subtitle">
+                    Learn more about my journey, passion, and the skills I bring to every project.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 class="subsection-title">My Journey</h3>
+                        <p class="text-content" data-testid="text-journey">
+                            As a Computer Science student, I've discovered my passion lies at the intersection of 
+                            technology and creativity. My journey began with curiosity about how games are made, 
+                            which led me to explore both the technical and creative aspects of game development.
+                        </p>
+                        
+                        <h3 class="subsection-title">Content Creation</h3>
+                        <p class="text-content" data-testid="text-content-creation">
+                            Through my "Bang Toon" YouTube channel, I've built a community of over 10,000 subscribers 
+                            by creating engaging Roblox content. This experience has taught me valuable skills in 
+                            video production, audience engagement, and digital marketing.
+                        </p>
+                        
+                        <h3 class="subsection-title">Future Goals</h3>
+                        <p class="text-content" data-testid="text-future-goals">
+                            I'm committed to continuous learning and growth in both game development and content creation. 
+                            My goal is to create innovative gaming experiences that bring joy to players worldwide.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-sidebar">
+                    <div class="quick-facts-card" data-testid="card-quick-facts">
+                        <h4 class="card-title">Quick Facts</h4>
+                        <ul class="facts-list">
+                            <li class="fact-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                Computer Science Student
+                            </li>
+                            <li class="fact-item">
+                                <i class="fab fa-youtube"></i>
+                                10K+ YouTube Subscribers
+                            </li>
+                            <li class="fact-item">
+                                <i class="fas fa-gamepad"></i>
+                                Game Development Enthusiast
+                            </li>
+                            <li class="fact-item">
+                                <i class="fas fa-video"></i>
+                                Content Creator
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="projects-title">Featured Projects</h2>
+                <p class="section-subtitle" data-testid="projects-subtitle">
+                    A showcase of my best work in content creation and development projects.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Main Project: Bang Toon YouTube Channel -->
+                <div class="main-project-card" data-testid="card-main-project">
+                    <div class="project-card">
+                        <div class="project-grid">
+                            <div class="project-image">
+                                <img src="attached_assets/Bang Toon New_1755824795027.jpg" alt="Bang Toon YouTube Channel - Roblox Gaming Content" data-testid="img-project-main">
+                                <div class="project-badge">
+                                    <i class="fab fa-youtube"></i>
+                                    Featured Project
+                                </div>
+                            </div>
+                            
+                            <div class="project-content">
+                                <h3 class="project-title" data-testid="title-main-project">"Bang Toon" YouTube Channel</h3>
+                                <p class="project-description" data-testid="text-main-project-description">
+                                    A successful YouTube channel focused on Roblox gameplay and educational content, 
+                                    featuring original videos with professional production quality.
+                                </p>
+                                
+                                <div class="project-stats">
+                                    <div class="stat-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>10,000+ Subscribers</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-video"></i>
+                                        <span>Regular Content Updates</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Roblox Gaming Focus</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-tags">
+                                    <span class="tag">Content Creation</span>
+                                    <span class="tag">Video Production</span>
+                                    <span class="tag">Gaming</span>
+                                    <span class="tag">Community Building</span>
+                                </div>
+                                
+                                <div class="project-actions">
+                                    <a href="https://www.youtube.com/@tayanadhif" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-testid="link-youtube-channel">
+                                        <i class="fab fa-youtube"></i>
+                                        Visit Channel
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="skills-title">Skills & Expertise</h2>
+                <p class="section-subtitle" data-testid="skills-subtitle">
+                    A comprehensive overview of my technical skills and creative abilities.
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-testid="skill-card-0">
+                    <div class="skill-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="skill-title">Game Development</h3>
+                    <ul class="skill-list">
+                        <li>Game Design Principles</li>
+                        <li>Unity Engine</li>
+                        <li>Roblox Studio</li>
+                        <li>C# Programming</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card" data-testid="skill-card-1">
+                    <div class="skill-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="skill-title">Content Creation</h3>
+                    <ul class="skill-list">
+                        <li>Video Production</li>
+                        <li>Adobe Premiere Pro</li>
+                        <li>CapCut Editing</li>
+                        <li>SEO Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card" data-testid="skill-card-2">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Programming</h3>
+                    <ul class="skill-list">
+                        <li>Computer Science Fundamentals</li>
+                        <li>Web Development</li>
+                        <li>Software Engineering</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card" data-testid="skill-card-3">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="skill-title">Design & Creativity</h3>
+                    <ul class="skill-list">
+                        <li>Thumbnail Design</li>
+                        <li>Visual Storytelling</li>
+                        <li>UI/UX Principles</li>
+                        <li>Creative Problem Solving</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card" data-testid="skill-card-4">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="skill-title">Digital Marketing</h3>
+                    <ul class="skill-list">
+                        <li>YouTube Analytics</li>
+                        <li>Community Building</li>
+                        <li>Content Strategy</li>
+                        <li>Social Media Management</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card" data-testid="skill-card-5">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="skill-title">Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Communication</li>
+                        <li>Project Management</li>
+                        <li>Team Collaboration</li>
+                        <li>Continuous Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="contact-title">Get In Touch</h2>
+                <p class="section-subtitle" data-testid="contact-subtitle">
+                    Ready to collaborate or have a question? I'd love to hear from you!
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Let's Connect</h3>
+                    <p class="contact-info-text">
+                        Whether you're interested in collaborating on a project, need content creation assistance, 
+                        or just want to chat about game development, feel free to reach out!
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@tayanadhif" target="_blank" rel="noopener noreferrer" class="social-link youtube" data-testid="social-youtube">
+                            <div class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="social-content">
+                                <span class="social-name">YouTube</span>
+                                <span class="social-description">10K+ subscribers</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/tayanadhif" target="_blank" rel="noopener noreferrer" class="social-link github" data-testid="social-github">
+                            <div class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="social-content">
+                                <span class="social-name">GitHub</span>
+                                <span class="social-description">Code repositories</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/the_spectacular_nadhif_17/" target="_blank" rel="noopener noreferrer" class="social-link instagram" data-testid="social-instagram">
+                            <div class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="social-content">
+                                <span class="social-name">Instagram</span>
+                                <span class="social-description">Personal updates</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form" data-testid="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required data-testid="input-name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required data-testid="input-email">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required data-testid="input-subject">
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-textarea" required data-testid="textarea-message"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" data-testid="button-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="copyright" data-testid="copyright">
+                        © <span id="currentYear"></span> Nadhif Aydin Adinandra. All rights reserved.
+                    </p>
+                </div>
+                
+                <div class="footer-nav" data-testid="footer-navigation">
+                    <button onclick="scrollToSection('home')" class="footer-nav-link" data-testid="footer-nav-home">Home</button>
+                    <button onclick="scrollToSection('about')" class="footer-nav-link" data-testid="footer-nav-about">About</button>
+                    <button onclick="scrollToSection('projects')" class="footer-nav-link" data-testid="footer-nav-projects">Projects</button>
+                    <button onclick="scrollToSection('contact')" class="footer-nav-link" data-testid="footer-nav-contact">Contact</button>
+                </div>
+            </div>
+            
+            <div class="footer-tagline">
+                <p class="tagline-text" data-testid="footer-tagline">
+                    Built with passion for creativity and technology. 
+                    <i class="fas fa-heart heart-icon"></i>
+                    Designed for modern web experiences.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="toast-icon fas fa-check-circle"></i>
+            <div class="toast-text">
+                <div class="toast-title" id="toastTitle"></div>
+                <div class="toast-description" id="toastDescription"></div>
+            </div>
+            <button class="toast-close" onclick="hideToast()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
